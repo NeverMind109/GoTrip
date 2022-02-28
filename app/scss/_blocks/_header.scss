@@ -1,0 +1,120 @@
+.header {
+  position: relative;
+  background: linear-gradient(132.05deg, #428e5f -17.38%, #112120 78.4%);
+  border-radius: 90px 90px 0 0;
+  height: 100vh;
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    border: 15vh solid transparent;
+    border-bottom: 0px solid #f6f6f6;
+    border-left: 50vw solid #f6f6f6;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    border: 15vh solid transparent;
+    border-bottom: 0px solid #f6f6f6;
+    border-right: 50vw solid #f6f6f6;
+  }
+}
+.header-top {
+  padding: 45px 0 20px;
+  &__sign-up {
+    color: #ffffff;
+    margin-right: 25px;
+  }
+  &__login {
+    color: #ffffff;
+  }
+}
+.header-bottom {
+  &__information {
+    position: relative;
+    text-align: left;
+    z-index: 2;
+    &::before {
+      position: absolute;
+      content: "";
+      background: url("../images/header-circles-decoration.svg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 48px;
+      height: 63px;
+      top: -10px;
+      right: -20px;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background: url("../images/header-lines-decoration.svg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 170px;
+      height: 50px;
+      bottom: -10%;
+      right: -35%;
+    }
+  }
+  &__suptittle {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 12px 30px;
+    margin-bottom: 7px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 82px;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  &__text {
+    max-width: 510px;
+    color: #ffffff;
+    opacity: 0.5;
+    margin-bottom: 70px;
+  }
+  &__link {
+    padding: 27px 47px;
+    color: #fefefe;
+  }
+  &__image {
+    position: relative;
+    height: 100%;
+    &::before {
+      position: absolute;
+      content: "";
+      background: url("../images/header-lines-decoration.svg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 170px;
+      height: 50px;
+      top: 15%;
+      right: -3%;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background: url("../images/header-circles-decoration.svg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 63px;
+      height: 83px;
+      bottom: 25%;
+      right: 0;
+    }
+  }
+  &__img {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    object-fit: cover;
+  }
+}
