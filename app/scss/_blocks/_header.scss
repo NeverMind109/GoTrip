@@ -86,6 +86,9 @@
   &__link {
     padding: 27px 47px;
     color: #fefefe;
+    &:active {
+      padding: 25px 45px;
+    }
   }
   &__image {
     position: relative;
