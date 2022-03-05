@@ -2,7 +2,8 @@
   position: relative;
   background: linear-gradient(132.05deg, #428e5f -17.38%, #112120 78.4%);
   border-radius: 90px 90px 0 0;
-  height: 100vh;
+  max-height: 100vh;
+  overflow-y: hidden;
   &::before {
     position: absolute;
     content: "";
@@ -11,6 +12,7 @@
     border: 15vh solid transparent;
     border-bottom: 0px solid #f6f6f6;
     border-left: 50vw solid #f6f6f6;
+    z-index: 0;
   }
   &::after {
     position: absolute;
