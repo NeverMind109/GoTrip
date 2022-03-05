@@ -1,0 +1,52 @@
+.subscribe {
+  padding-bottom: 106px;
+  &__title {
+    max-width: 750px;
+    text-align: center;
+    margin: 0 auto 60px;
+  }
+  &__form {
+    max-width: 800px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  &__input {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0f1f1c;
+    opacity: 0.5;
+    padding: 45px 130px 45px 45px;
+    background: linear-gradient(0deg, #ffffff, #ffffff), #c4c4c4;
+    border: none;
+    border-radius: 35px;
+    &::placeholder {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: #0f1f1c;
+      opacity: 0.5;
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    padding: 34px 87px;
+    color: #fefefe;
+    border: none;
+    border-radius: 35px;
+    &:active {
+      padding: 32px 85px;
+    }
+  }
+  &__invalid-feedback {
+    padding: 10px 0 10px 25px;
+  }
+}
