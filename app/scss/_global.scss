@@ -107,22 +107,27 @@ body {
       margin: 0 40px;
       &--header {
         color: #ffffff;
+        &:hover {
+          color: #ffffff;
+          &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 80%;
+            height: 4px;
+            bottom: -5px;
+            left: 0;
+            background-color: #c4c4c4;
+            border-radius: 100px;
+          }
+        }
       }
       &--footer {
         color: #0f1f1c;
-      }
-      &:hover {
-        color: #ffffff;
-        &::after {
-          position: absolute;
-          display: block;
-          content: "";
-          width: 80%;
-          height: 4px;
-          bottom: -5px;
-          left: 0;
-          background-color: #c4c4c4;
-          border-radius: 100px;
+        opacity: 0.5;
+        &:hover {
+          color: inherit;
+          text-decoration: underline;
         }
       }
     }

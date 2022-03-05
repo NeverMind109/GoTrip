@@ -1,0 +1,22 @@
+.footer {
+  padding-bottom: 74px;
+  &__sign-up {
+    color: #838b89;
+    margin-right: 25px;
+    &:hover {
+      color: #fff;
+    }
+    &:active {
+      color: #000;
+    }
+  }
+  &__login {
+    color: #838b89;
+    &:hover {
+      color: #fff;
+    }
+    &:active {
+      color: #000;
+    }
+  }
+}
