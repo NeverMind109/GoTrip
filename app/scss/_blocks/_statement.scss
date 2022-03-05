@@ -1,0 +1,58 @@
+.statement {
+  padding-bottom: 135px;
+  &__wrapper {
+    position: relative;
+    background: #ffffff;
+    border-radius: 60px;
+    padding: 115px 0;
+    text-align: center;
+    color: #0f1f1c;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 63px;
+      height: 83px;
+      background: url("../images/statement-deco.svg") no-repeat;
+      background-position: center;
+      background-size: cover;
+      bottom: 10%;
+      left: 5%;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 63px;
+      height: 83px;
+      transform: rotate(180deg);
+      background: url("../images/statement-deco.svg") no-repeat;
+      background-position: center;
+      background-size: cover;
+      top: 10%;
+      right: 5%;
+    }
+  }
+  &__content {
+    max-width: 590px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 68px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    opacity: 0.5;
+    margin-bottom: 60px;
+  }
+  &__link {
+    padding: 27px 47px;
+    color: #fefefe;
+    &:active {
+      padding: 25px 45px;
+    }
+  }
+}
