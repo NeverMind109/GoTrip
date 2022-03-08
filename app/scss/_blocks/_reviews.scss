@@ -21,10 +21,10 @@
     border: none;
     border-radius: 0;
   }
-  &__slide-header {
+  &__card-header {
     display: flex;
     align-items: center;
-    padding: 0 0 60px;
+    padding: 0 10px 60px;
     border: none;
     background-color: #f6f6f6;
     &:first-child {
@@ -35,6 +35,8 @@
     background: #ff794e;
     border-radius: 71.5px;
     margin-right: 33px;
+    width: 134px;
+    height: 134px;
   }
   &__slide-reviewer {
     display: flex;
@@ -53,7 +55,7 @@
     opacity: 0.5;
   }
   &__card-body {
-    padding: 0 0 30px;
+    padding: 0 10px 30px;
     border: none;
     background-color: #f6f6f6;
     &:last-child {
@@ -69,7 +71,7 @@
   &__card-footer {
     border: none;
     background: #f6f6f6;
-    padding: 0;
+    padding: 0 0 0 10px;
   }
   &__stars {
     display: flex;

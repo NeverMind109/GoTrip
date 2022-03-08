@@ -17,7 +17,9 @@
     <header class="header" id="home">
       <div class="container">
         <div class="header-top">
-          <div class="row d-flex justify-content-between align-items-center">
+          <div
+            class="row d-flex justify-content-between align-items-center col-12"
+          >
             <a class="logo d-flex header-top__logo col-3" href="#home">
               <img
                 class="logo__img"
@@ -27,7 +29,10 @@
                 height="22"
               />
             </a>
-            <nav class="menu d-flex justify-content-center col-6">
+            <nav
+              class="menu d-flex justify-content-center col-md-6 col-12"
+              id="menu"
+            >
               <ul class="menu-list d-flex align-items-center">
                 <li class="menu-list__item">
                   <a
@@ -51,19 +56,37 @@
                     >Contact</a
                   >
                 </li>
+                <li
+                  class="menu-list__item d-md-none d-flex align-items-center justify-content-between"
+                >
+                  <button class="menu-list__link menu-list__button">
+                    Sign up
+                  </button>
+                  <button class="menu-list__link menu-list__button">
+                    Login
+                  </button>
+                </li>
               </ul>
             </nav>
-            <div class="header-top__buttons d-flex justify-content-end col-3">
+            <div
+              class="header-top__buttons d-md-flex d-none justify-content-end col-3"
+            >
               <button class="menu-button header-top__sign-up">Sign up</button>
               <button class="menu-button header-top__login">Login</button>
             </div>
+            <button class="menu-mobile d-flex d-md-none col-3">
+              <span class="menu-mobile__line"></span>
+              <span class="menu-mobile__line"></span>
+            </button>
           </div>
         </div>
         <div class="header-bottom">
-          <div class="row d-flex justify-content-between align-items-center">
+          <div
+            class="row d-flex justify-content-md-between align-items-md-center"
+          >
             <div class="header-bottom__information col-md-6 col-12">
               <h3 class="header-bottom__suptittle">explore the world</h3>
-              <h1 class="header-bottom__title">
+              <h1 class="section-title header-bottom__title">
                 Explore The Natural Beauty Of Halmahera With Us
               </h1>
               <p class="header-bottom__text">
@@ -73,7 +96,7 @@
               <a class="button header-bottom__link" href="#">Explore Now</a>
             </div>
             <div
-              class="header-bottom__image d-flex justify-content-center align-self-center col-md-6 col-12"
+              class="header-bottom__image d-md-flex justify-content-md-center align-self-md-center col-md-6 d-none"
             >
               <img
                 class="header-bottom__img"
@@ -90,7 +113,7 @@
     <main class="content">
       <section class="destinations">
         <div class="row destinations__row">
-          <div class="destinations__content">
+          <div class="destinations__content col-lg-5 col-12">
             <div class="destinations__container">
               <div class="destinations__information col-md-5 col-12">
                 <h3 class="destinations__suptittle">Choice Of</h3>
@@ -104,7 +127,7 @@
             </div>
           </div>
           <div
-            class="destinations__photos d-flex justify-content-center align-self-center col-md-7 col-12"
+            class="destinations__photos d-flex justify-content-lg-center align-self-lg-center col-xxl-6 col-lg-7 col-12"
           >
             <div class="destinations__photo">
               <img
@@ -147,7 +170,12 @@
       </section>
       <div class="container">
         <section class="reviews">
-          <div class="row d-flex align-items-top justify-content-start">
+          <h2 class="reviews__title d-flex d-md-none">
+            What do customers say about us?
+          </h2>
+          <div
+            class="row d-flex align-items-top justify-content-md-start justify-content-center"
+          >
             <div class="reviews__image col-md-5 col-12">
               <img
                 class="reviews__img"
@@ -158,10 +186,12 @@
               />
             </div>
             <div class="reviews__block col-md-6 col-12">
-              <h2 class="reviews__title">What do customers say about us?</h2>
+              <h2 class="reviews__title d-none d-md-flex">
+                What do customers say about us?
+              </h2>
               <div class="reviews__slider">
                 <div class="card reviews__slide">
-                  <div class="card-header reviews__slide-header">
+                  <div class="card-header reviews__card-header">
                     <img
                       class="reviews__slide-avatar"
                       src="images/reviews-avatar-1.png"
@@ -253,7 +283,7 @@
                   </div>
                 </div>
                 <div class="card reviews__slide">
-                  <div class="card-header reviews__slide-header">
+                  <div class="card-header reviews__card-header">
                     <img
                       class="reviews__slide-avatar"
                       src="images/reviews-avatar-2.png"
@@ -345,7 +375,7 @@
                   </div>
                 </div>
                 <div class="card reviews__slide">
-                  <div class="card-header reviews__slide-header">
+                  <div class="card-header reviews__card-header">
                     <img
                       class="reviews__slide-avatar"
                       src="images/reviews-avatar-3.png"
@@ -483,8 +513,13 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="row d-flex justify-content-between align-items-center">
-          <a class="logo d-flex footer__logo col-3" href="#home">
+        <div
+          class="row d-flex justify-content-sm-between justify-content-center align-items-center"
+        >
+          <a
+            class="logo d-flex footer__logo col-sm-3 col-12 align-self-start"
+            href="#home"
+          >
             <img
               class="logo__img"
               src="images/logo-footer.png"
@@ -517,7 +552,9 @@
               </li>
             </ul>
           </nav>
-          <div class="footer__buttons d-flex justify-content-end col-3">
+          <div
+            class="footer__buttons d-sm-flex d-none justify-content-end col-3"
+          >
             <button class="menu-button footer__sign-up">Sign up</button>
             <button class="menu-button footer__login">Login</button>
           </div>

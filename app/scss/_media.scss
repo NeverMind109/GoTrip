@@ -1,0 +1,462 @@
+@media (max-width: 1350px) {
+  .header {
+    &::before {
+      border: 9vh solid transparent;
+      border-bottom: 0px solid #f6f6f6;
+      border-left: 50vw solid #f6f6f6;
+    }
+    &::after {
+      border: 9vh solid transparent;
+      border-bottom: 0px solid #f6f6f6;
+      border-right: 50vw solid #f6f6f6;
+    }
+  }
+}
+@media (max-height: 900px) {
+  .header {
+    max-height: none;
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
+// ≥992px
+@include media-breakpoint-down(lg) {
+  .section-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .menu {
+    &-list {
+      &__link {
+        margin: 0 20px;
+      }
+    }
+  }
+  .header {
+    max-height: none;
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+  .header-top {
+    &__sign-up {
+      margin-right: 0px;
+    }
+  }
+  .header-bottom {
+    &__information {
+      &::before {
+        top: 5px;
+      }
+      &::after {
+        bottom: 5px;
+      }
+    }
+    &__link {
+      margin-bottom: 25px;
+    }
+    &__img {
+      width: 90%;
+      height: 90%;
+    }
+  }
+  .destinations {
+    &__row {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+    &__content {
+      order: 1;
+      display: flex;
+      padding-right: 0;
+    }
+    &__container {
+      position: static;
+      max-width: 100%;
+    }
+    &__information {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      padding: 30px 0 0;
+    }
+    &__text {
+      width: 80%;
+      margin: 15px auto 60px;
+    }
+    &__photos {
+      order: 0;
+      width: 100%;
+      margin: 0 auto;
+      padding-right: 0;
+    }
+    &__slider-button {
+      left: 65px;
+    }
+    &__photo {
+      padding: 40px;
+    }
+    &__img {
+      width: 230px;
+      height: 310px;
+    }
+    .slick-center {
+      .destinations__img {
+        width: 340px;
+        height: 390px;
+      }
+    }
+  }
+  .reviews {
+    &__title {
+      font-size: 36px;
+      line-height: 50px;
+    }
+  }
+  .statement {
+    &__title {
+      font-size: 36px;
+      line-height: 50px;
+    }
+  }
+}
+// ≥768px
+@include media-breakpoint-down(md) {
+  .header {
+    position: static;
+  }
+  .header-top {
+    padding: 45px 0 50px;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding-top: 40px;
+    max-height: 100vh;
+    height: auto;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(132.05deg, #428e5f -17.38%, #112120 78.4%);
+    transform: translateY(-300%);
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    z-index: 20;
+    &-list {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    &-list__item {
+      align-items: flex-start;
+      padding: 25px 0 25px;
+    }
+    &-list__link {
+      color: #fff;
+      margin: 0;
+    }
+    &-list__button {
+      font-size: 18px;
+      line-height: 20px;
+      margin: 0 35px;
+      color: #fff;
+      border: none;
+      background-color: transparent;
+    }
+    &--active {
+      transform: translateY(0);
+      overflow-y: scroll;
+    }
+  }
+  .header-bottom {
+    &__information {
+      text-align: center;
+      &::before {
+        right: 1%;
+        width: 40px;
+        height: 52px;
+      }
+      &::after {
+        left: 1%;
+        width: 130px;
+        height: 38px;
+      }
+    }
+    &__title {
+      max-width: 90%;
+      margin: 0 auto 30px;
+    }
+    &__text {
+      margin: 0 auto 50px;
+    }
+  }
+  .destinations {
+    padding: 50px 0 100px;
+    &__text {
+      width: 70%;
+      margin: 15px auto 30px;
+    }
+    &__photo {
+      padding: 40px;
+    }
+    &__img {
+      width: 180px;
+      height: 270px;
+    }
+    .slick-center {
+      .destinations__img {
+        width: 220px;
+        height: 350px;
+      }
+    }
+  }
+  .reviews {
+    padding-bottom: 100px;
+    &__image {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    &__block {
+      margin-left: 0;
+    }
+    &__img {
+      width: 320px;
+      height: 370px;
+    }
+    &__title {
+      justify-content: center;
+      text-align: center;
+    }
+    &__text {
+      max-width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__card-header {
+      justify-content: center;
+    }
+    &__stars {
+      justify-content: center;
+    }
+  }
+  .statement {
+    padding-bottom: 100px;
+    &__wrapper {
+      padding: 50px 0;
+      &::after {
+        display: none;
+      }
+    }
+    &__content {
+      max-width: 80%;
+    }
+  }
+  .subscribe {
+    padding-bottom: 100px;
+    &__title {
+      max-width: 90%;
+      margin: 0 auto 50px;
+    }
+    &__form {
+      max-width: 100%;
+    }
+    &__input {
+      padding: 45px 30px;
+      margin-bottom: 15px;
+    }
+    &__btn {
+      position: static;
+      width: 100%;
+    }
+    &__invalid-feedback {
+      text-align: center;
+      padding: 10px;
+    }
+  }
+}
+// ≥576px
+@include media-breakpoint-down(sm) {
+  body {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .section-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .menu {
+    padding-top: 0;
+    top: 70px;
+  }
+  .header {
+    border-radius: 60px 60px 0 0;
+  }
+  .header-top {
+    padding: 25px 0 20px;
+  }
+  .header-bottom {
+    &__information {
+      text-align: center;
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    &__suptittle {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 8px 20px;
+      margin-bottom: 10px;
+    }
+    &__title {
+      color: #ffffff;
+      margin: 0 auto 20px;
+    }
+    &__text {
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
+    &__link {
+      padding: 16px 22px;
+      color: #fefefe;
+      &:active {
+        padding: 14px 20px;
+      }
+    }
+  }
+  .destinations {
+    padding: 50px 0 75px;
+    &__suptittle {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__text {
+      line-height: 21px;
+      margin: 20px auto 20px;
+    }
+    &__link {
+      padding: 16px 22px;
+      color: #fefefe;
+      &:active {
+        padding: 14px 20px;
+      }
+    }
+    &__photo {
+      padding: 0;
+    }
+    &__img {
+      margin: 0 auto;
+      width: 150px;
+      height: 200px;
+    }
+    &__slider-button {
+      left: 15%;
+    }
+    .slick-center {
+      .destinations__img {
+        width: 150px;
+        height: 200px;
+      }
+    }
+  }
+  .reviews {
+    padding-bottom: 75px;
+    &__img {
+      width: 250px;
+      height: 300px;
+    }
+    &__card-header {
+      padding: 0 10px 30px;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+    &__slide-avatar {
+      width: 75px;
+      height: 75px;
+    }
+    &__slide-name {
+      font-size: 17px;
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+    &__slide-country {
+      font-size: 17px;
+      line-height: 20px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__star {
+      svg {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+  .statement {
+    padding-bottom: 75px;
+    &__wrapper {
+      padding: 30px 0;
+      &::before {
+        width: 45px;
+        height: 60px;
+      }
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+    &__link {
+      padding: 16px 22px;
+      &:active {
+        padding: 14px 20px;
+      }
+    }
+  }
+  .subscribe {
+    padding-bottom: 75px;
+    &__title {
+      margin: 0 auto 20px;
+    }
+    &__input {
+      font-size: 20px;
+      line-height: 24px;
+      padding: 20px;
+      &::placeholder {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    &__btn {
+      padding: 16px 26px;
+      &:active {
+        padding: 14px 24px;
+      }
+    }
+  }
+  .footer {
+    padding-bottom: 30px;
+  }
+}
