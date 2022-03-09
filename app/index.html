@@ -59,10 +59,20 @@
                 <li
                   class="menu-list__item d-md-none d-flex align-items-center justify-content-between"
                 >
-                  <button class="menu-list__link menu-list__button">
+                  <button
+                    class="menu-list__link menu-list__button"
+                    data-bs-toggle="modal"
+                    href="#signUpModal"
+                    role="button"
+                  >
                     Sign up
                   </button>
-                  <button class="menu-list__link menu-list__button">
+                  <button
+                    class="menu-list__link menu-list__button"
+                    data-bs-toggle="modal"
+                    href="#loginModal"
+                    role="button"
+                  >
                     Login
                   </button>
                 </li>
@@ -71,8 +81,22 @@
             <div
               class="header-top__buttons d-md-flex d-none justify-content-end col-3"
             >
-              <button class="menu-button header-top__sign-up">Sign up</button>
-              <button class="menu-button header-top__login">Login</button>
+              <button
+                class="menu-button header-top__sign-up"
+                data-bs-toggle="modal"
+                href="#signUpModal"
+                role="button"
+              >
+                Sign up
+              </button>
+              <button
+                class="menu-button header-top__login"
+                data-bs-toggle="modal"
+                href="#loginModal"
+                role="button"
+              >
+                Login
+              </button>
             </div>
             <button class="menu-mobile d-flex d-md-none col-3">
               <span class="menu-mobile__line"></span>
@@ -555,12 +579,180 @@
           <div
             class="footer__buttons d-sm-flex d-none justify-content-end col-3"
           >
-            <button class="menu-button footer__sign-up">Sign up</button>
-            <button class="menu-button footer__login">Login</button>
+            <button class="menu-button footer__sign-up" data-bs-toggle="modal"
+            href="#signUpModal"
+            role="button">Sign up</button>
+            <button class="menu-button footer__login" data-bs-toggle="modal"
+            href="#loginModal"
+            role="button">Login</button>
           </div>
         </div>
       </div>
     </footer>
+    <div
+      class="modal fade"
+      id="signUpModal"
+      aria-hidden="true"
+      aria-labelledby="esignUpModalLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="registrationModalLabel">
+              Sign Up
+            </h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="needs-validation" action="#" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Enter your name</label>
+                <input type="text" class="form-control" id="name" required />
+                <div class="invalid-feedback">Please, enter your name</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">
+                  Enter your email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  required
+                />
+                <div class="invalid-feedback">Please, enter your email</div>
+              </div>
+              <div class="mb-3">
+                <label for="InputPassword1" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="InputPassword1"
+                  required
+                />
+                <div class="invalid-feedback">Please, enter your password</div>
+              </div>
+              <div class="mb-3">
+                <label for="InputPassword2" class="form-label"
+                  >Repeat your password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="InputPassword2"
+                  required
+                />
+                <div class="invalid-feedback">Please, repeat your password</div>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="Check1"
+                  required
+                  checked
+                />
+                <label class="form-check-label modal-check-text" for="Check1"
+                  >I accept the
+                  <a class="modal-link" href="#">terms of use of the site</a>
+                  and
+                  <a class="modal-link" href="#"
+                    >the rules for the processing of personal data</a
+                  ></label
+                >
+                <div class="invalid-feedback">You should accept the rules</div>
+              </div>
+              <button type="submit" class="btn btn-prime">Sign Up</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-second"
+              data-bs-target="#loginModal"
+              data-bs-toggle="modal"
+              data-bs-dismiss="modal"
+            >
+              Already registered? Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="loginModal"
+      aria-hidden="true"
+      aria-labelledby="loginModalLabel"
+      tabindex="-1"
+    >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="loginModalLabel">Sign In</h3>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" action="#" novalidate>
+            <div class="mb-3">
+              <label for="InputEmail2" class="form-label"
+                >Your Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="InputEmail2"
+                required
+              />
+              <div class="invalid-feedback">Please, enter your email</div>
+            </div>
+            <div class="mb-3">
+              <label for="InputPassword3" class="form-label"
+                >Your Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="InputPassword3"
+                required
+              />
+              <div class="invalid-feedback">
+                Please, enter your password
+              </div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="Check2" />
+              <label class="form-check-label" for="Check2"
+                >Remember me</label
+              >
+            </div>
+            <button type="submit" class="btn btn-prime">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            class="btn btn-second"
+            data-bs-target="#signUpModal"
+            data-bs-toggle="modal"
+            data-bs-dismiss="modal"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
     <script src="js/main.min.js"></script>
   </body>
 </html>

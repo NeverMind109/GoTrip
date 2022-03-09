@@ -1,0 +1,50 @@
+.modal {
+  &-header {
+    background: linear-gradient(132.05deg, #428e5f -8.38%, #112120 100.4%);
+    color: #fff;
+  }
+  &-title {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  &-link {
+    text-decoration: underline;
+    &:hover {
+      color: inherit;
+    }
+  }
+  &-check-text {
+    font-size: 15px;
+    line-height: 16px;
+  }
+  &-footer {
+    padding-top: 20px;
+    justify-content: center;
+  }
+}
+.btn {
+  color: #ffffff;
+  border-radius: 30px;
+  transition: all 0.5s;
+  &-prime {
+    padding: 12px 32px;
+    background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%);
+    &:hover {
+      border: 1px solid #000;
+      color: #fff;
+    }
+  }
+  &-second {
+    padding: 12px 32px;
+    background: linear-gradient(132.05deg, #428e5f -17.38%, #112120 78.4%);
+    &:hover {
+      border: 1px solid #000;
+      color: #fff;
+    }
+  }
+}
+.form-check-input:checked {
+  background-color: green;
+  border-color: green;
+}
