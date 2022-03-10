@@ -48,3 +48,36 @@
   background-color: green;
   border-color: green;
 }
+img.hover-shadow {
+  transition: 0.3s;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.slick-lightbox {
+  .slick-next {
+    width: 60px;
+    height: 60px;
+    right: 50px;
+    z-index: 10;
+    &::before {
+      font-size: 60px;
+    }
+  }
+  .slick-prev {
+    width: 60px;
+    height: 60px;
+    left: 50px;
+    z-index: 10;
+    &::before {
+      font-size: 60px;
+    }
+  }
+  .slick-lightbox-close {
+    width: 40px;
+    height: 40px;
+    &::before {
+      font-size: 40px;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 $(function () {
-  $(".destinations__photos").slick({
+  $("#destinations-gallery").slick({
     centerMode: true,
     slidesToShow: 2,
     infinite: true,
@@ -27,6 +27,11 @@ $(function () {
         },
       },
     ],
+  });
+  $("#destinations-gallery").slickLightbox({
+    src: "src",
+    itemSelector: ".destinations__photo img",
+    background: "rgba(0, 0, 0, .9)",
   });
 
   $(".reviews__slider").slick({
