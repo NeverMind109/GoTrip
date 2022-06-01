@@ -29,6 +29,12 @@
     font-size: 40px;
     line-height: 50px;
   }
+  .animate__animated {
+    animation: none !important;
+  }
+  .animated {
+    animation: none !important;
+  }
   .menu {
     &-list {
       &__link {

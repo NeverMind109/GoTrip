@@ -51,8 +51,7 @@
     font-weight: 400;
     font-size: 25px;
     line-height: 38px;
-    color: #0f1f1c;
-    opacity: 0.5;
+    color: rgba(#0f1f1c, 0.5);
   }
   &__card-body {
     padding: 0 10px 30px;
@@ -65,8 +64,7 @@
   &__text {
     font-size: 22px;
     line-height: 33px;
-    color: #0f1f1c;
-    opacity: 0.5;
+    color: rgba(#0f1f1c, 0.5);
   }
   &__card-footer {
     border: none;
